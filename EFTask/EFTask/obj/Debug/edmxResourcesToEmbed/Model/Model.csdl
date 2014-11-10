@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GuestBookModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="GuestBookEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Comments" EntityType="GuestBookModel.Comment" />
+    <EntitySet Name="Mashas" EntityType="GuestBookModel.Masha" />
+    <EntitySet Name="Recs" EntityType="GuestBookModel.Rec" />
+    <EntitySet Name="Records" EntityType="GuestBookModel.Record" />
+    <EntitySet Name="students" EntityType="GuestBookModel.student" />
+    <EntitySet Name="Table1" EntityType="GuestBookModel.Table1" />
+    <EntitySet Name="universities" EntityType="GuestBookModel.university" />
+    <EntitySet Name="Visits" EntityType="GuestBookModel.Visit" />
+    <AssociationSet Name="FK__student__id_univ__412EB0B6" Association="GuestBookModel.FK__student__id_univ__412EB0B6">
+      <End Role="university" EntitySet="universities" />
+      <End Role="student" EntitySet="students" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Text" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Masha">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Rec">
+    <Key>
+      <PropertyRef Name="name" />
+      <PropertyRef Name="comment" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+    <Property Name="comment" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="true" />
+  </EntityType>
+  <EntityType Name="Record">
+    <Key>
+      <PropertyRef Name="name" />
+      <PropertyRef Name="comment" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="4000" Unicode="true" FixedLength="false" />
+    <Property Name="comment" Type="String" Nullable="false" MaxLength="4000" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="student">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="first_name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="last_name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="name_group" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="id_university" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="university" Relationship="GuestBookModel.FK__student__id_univ__412EB0B6" FromRole="student" ToRole="university" />
+  </EntityType>
+  <EntityType Name="Table1">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="university">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="town" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="rating" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="students" Relationship="GuestBookModel.FK__student__id_univ__412EB0B6" FromRole="university" ToRole="student" />
+  </EntityType>
+  <EntityType Name="Visit">
+    <Key>
+      <PropertyRef Name="count" />
+    </Key>
+    <Property Name="count" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__student__id_univ__412EB0B6">
+    <End Role="university" Type="GuestBookModel.university" Multiplicity="1" />
+    <End Role="student" Type="GuestBookModel.student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="university">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="student">
+        <PropertyRef Name="id_university" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

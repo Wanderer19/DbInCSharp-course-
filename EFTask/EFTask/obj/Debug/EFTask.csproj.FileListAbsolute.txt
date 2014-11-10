@@ -1,0 +1,12 @@
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EFTask\EFTask\bin\Debug\EFTask.exe.config
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EFTask\EFTask\bin\Debug\EFTask.exe
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EFTask\EFTask\bin\Debug\EFTask.pdb
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EFTask\EFTask\obj\Debug\EFTask.csprojResolveAssemblyReference.cache
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EFTask\EFTask\obj\Debug\EFTask.Form1.resources
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EFTask\EFTask\obj\Debug\EFTask.Properties.Resources.resources
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EFTask\EFTask\obj\Debug\EFTask.csproj.GenerateResource.Cache
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EFTask\EFTask\obj\Debug\EFTask.exe
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EFTask\EFTask\obj\Debug\EFTask.pdb
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EFTask\EFTask\bin\Debug\EntityFramework.dll
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EFTask\EFTask\bin\Debug\EntityFramework.xml
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EFTask\EFTask\bin\Debug\ru\EntityFramework.resources.dll
