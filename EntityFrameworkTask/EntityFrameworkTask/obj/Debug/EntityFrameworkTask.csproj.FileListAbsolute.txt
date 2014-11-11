@@ -1,0 +1,12 @@
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EntityFrameworkTask\EntityFrameworkTask\bin\Debug\EntityFrameworkTask.exe.config
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EntityFrameworkTask\EntityFrameworkTask\bin\Debug\EntityFrameworkTask.exe
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EntityFrameworkTask\EntityFrameworkTask\bin\Debug\EntityFrameworkTask.pdb
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EntityFrameworkTask\EntityFrameworkTask\bin\Debug\EntityFramework.dll
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EntityFrameworkTask\EntityFrameworkTask\bin\Debug\EntityFramework.xml
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EntityFrameworkTask\EntityFrameworkTask\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EntityFrameworkTask\EntityFrameworkTask\obj\Debug\EntityFrameworkTask.csprojResolveAssemblyReference.cache
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EntityFrameworkTask\EntityFrameworkTask\obj\Debug\EntityFrameworkTask.DataSender.resources
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EntityFrameworkTask\EntityFrameworkTask\obj\Debug\EntityFrameworkTask.Properties.Resources.resources
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EntityFrameworkTask\EntityFrameworkTask\obj\Debug\EntityFrameworkTask.csproj.GenerateResource.Cache
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EntityFrameworkTask\EntityFrameworkTask\obj\Debug\EntityFrameworkTask.exe
+C:\Users\1\Documents\Visual Studio 2012\Projects\01-mark\EntityFrameworkTask\EntityFrameworkTask\obj\Debug\EntityFrameworkTask.pdb

@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище GuestBookModel" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="Хранилище GuestBookModelContainer">
+          <EntitySet Name="Comment" EntityType="Хранилище GuestBookModel.Comment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Masha" EntityType="Хранилище GuestBookModel.Masha" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Rec" EntityType="Хранилище GuestBookModel.Rec" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Records" EntityType="Хранилище GuestBookModel.Records" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="student" EntityType="Хранилище GuestBookModel.student" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Table1" EntityType="Хранилище GuestBookModel.Table1" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="university" EntityType="Хранилище GuestBookModel.university" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Visits" EntityType="Хранилище GuestBookModel.Visits" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK__student__id_univ__412EB0B6" Association="Хранилище GuestBookModel.FK__student__id_univ__412EB0B6">
+            <End Role="university" EntitySet="university" />
+            <End Role="student" EntitySet="student" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Comment">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Text" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Masha">
+          <Key>
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="name" Type="varchar" Nullable="false" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="Rec">
+          <Key>
+            <PropertyRef Name="name" />
+            <PropertyRef Name="comment" />
+          </Key>
+          <Property Name="name" Type="nchar" Nullable="false" MaxLength="10" />
+          <Property Name="comment" Type="nchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Records">
+          <Key>
+            <PropertyRef Name="name" />
+            <PropertyRef Name="comment" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" />
+          <Property Name="comment" Type="nvarchar" Nullable="false" />
+        </EntityType>
+        <EntityType Name="student">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="first_name" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="last_name" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="name_group" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="id_university" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Table1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="university">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="town" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="rating" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Visits">
+          <Key>
+            <PropertyRef Name="count" />
+          </Key>
+          <Property Name="count" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__student__id_univ__412EB0B6">
+          <End Role="university" Type="Хранилище GuestBookModel.university" Multiplicity="1" />
+          <End Role="student" Type="Хранилище GuestBookModel.student" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="university">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="student">
+              <PropertyRef Name="id_university" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GuestBookModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="GuestBookEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Comments" EntityType="GuestBookModel.Comment" />
+          <EntitySet Name="Mashas" EntityType="GuestBookModel.Masha" />
+          <EntitySet Name="Recs" EntityType="GuestBookModel.Rec" />
+          <EntitySet Name="Records" EntityType="GuestBookModel.Record" />
+          <EntitySet Name="students" EntityType="GuestBookModel.student" />
+          <EntitySet Name="Table1" EntityType="GuestBookModel.Table1" />
+          <EntitySet Name="universities" EntityType="GuestBookModel.university" />
+          <EntitySet Name="Visits" EntityType="GuestBookModel.Visit" />
+          <AssociationSet Name="FK__student__id_univ__412EB0B6" Association="GuestBookModel.FK__student__id_univ__412EB0B6">
+            <End Role="university" EntitySet="universities" />
+            <End Role="student" EntitySet="students" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Comment">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Text" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Masha">
+          <Key>
+            <PropertyRef Name="name" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Rec">
+          <Key>
+            <PropertyRef Name="name" />
+            <PropertyRef Name="comment" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="comment" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="true" />
+        </EntityType>
+        <EntityType Name="Record">
+          <Key>
+            <PropertyRef Name="name" />
+            <PropertyRef Name="comment" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="4000" Unicode="true" FixedLength="false" />
+          <Property Name="comment" Type="String" Nullable="false" MaxLength="4000" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="student">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="first_name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="last_name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="name_group" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="id_university" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="university" Relationship="GuestBookModel.FK__student__id_univ__412EB0B6" FromRole="student" ToRole="university" />
+        </EntityType>
+        <EntityType Name="Table1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="university">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="town" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="rating" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="students" Relationship="GuestBookModel.FK__student__id_univ__412EB0B6" FromRole="university" ToRole="student" />
+        </EntityType>
+        <EntityType Name="Visit">
+          <Key>
+            <PropertyRef Name="count" />
+          </Key>
+          <Property Name="count" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__student__id_univ__412EB0B6">
+          <End Role="university" Type="GuestBookModel.university" Multiplicity="1" />
+          <End Role="student" Type="GuestBookModel.student" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="university">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="student">
+              <PropertyRef Name="id_university" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище GuestBookModelContainer" CdmEntityContainer="GuestBookEntities">
+          <EntitySetMapping Name="Comments">
+            <EntityTypeMapping TypeName="GuestBookModel.Comment">
+              <MappingFragment StoreEntitySet="Comment">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Text" ColumnName="Text" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Mashas">
+            <EntityTypeMapping TypeName="GuestBookModel.Masha">
+              <MappingFragment StoreEntitySet="Masha">
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Recs">
+            <EntityTypeMapping TypeName="GuestBookModel.Rec">
+              <MappingFragment StoreEntitySet="Rec">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="comment" ColumnName="comment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Records">
+            <EntityTypeMapping TypeName="GuestBookModel.Record">
+              <MappingFragment StoreEntitySet="Records">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="comment" ColumnName="comment" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="students">
+            <EntityTypeMapping TypeName="GuestBookModel.student">
+              <MappingFragment StoreEntitySet="student">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="first_name" ColumnName="first_name" />
+                <ScalarProperty Name="last_name" ColumnName="last_name" />
+                <ScalarProperty Name="name_group" ColumnName="name_group" />
+                <ScalarProperty Name="id_university" ColumnName="id_university" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Table1">
+            <EntityTypeMapping TypeName="GuestBookModel.Table1">
+              <MappingFragment StoreEntitySet="Table1">
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="universities">
+            <EntityTypeMapping TypeName="GuestBookModel.university">
+              <MappingFragment StoreEntitySet="university">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="town" ColumnName="town" />
+                <ScalarProperty Name="rating" ColumnName="rating" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Visits">
+            <EntityTypeMapping TypeName="GuestBookModel.Visit">
+              <MappingFragment StoreEntitySet="Visits">
+                <ScalarProperty Name="count" ColumnName="count" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
