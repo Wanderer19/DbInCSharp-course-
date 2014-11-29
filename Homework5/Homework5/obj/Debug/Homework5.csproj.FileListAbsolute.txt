@@ -1,0 +1,10 @@
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5\bin\Debug\Homework5.dll
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5\bin\Debug\Homework5.pdb
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5\obj\Debug\Homework5.csprojResolveAssemblyReference.cache
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5\obj\Debug\Homework5.dll
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5\obj\Debug\Homework5.pdb
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5\bin\Debug\Homework5.dll.config
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5\bin\Debug\EntityFramework.dll
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5\bin\Debug\EntityFramework.xml
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5\bin\Debug\EntityFramework.SqlServer.xml

@@ -1,0 +1,14 @@
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.App\bin\Debug\Homework5.App.exe.config
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.App\bin\Debug\Homework5.App.exe
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.App\bin\Debug\Homework5.App.pdb
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.App\bin\Debug\EntityFramework.dll
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.App\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.App\bin\Debug\Homework5.DataLayer.dll
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.App\bin\Debug\Homework5.dll
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.App\bin\Debug\Homework5.DataLayer.pdb
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.App\bin\Debug\Homework5.pdb
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.App\bin\Debug\EntityFramework.xml
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.App\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.App\obj\Debug\Homework5.App.csprojResolveAssemblyReference.cache
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.App\obj\Debug\Homework5.App.exe
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.App\obj\Debug\Homework5.App.pdb

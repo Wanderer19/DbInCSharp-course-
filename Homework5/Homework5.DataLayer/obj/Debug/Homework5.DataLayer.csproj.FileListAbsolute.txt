@@ -1,0 +1,17 @@
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.DataLayer\bin\Debug\Homework5.DataLayer.dll.config
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.DataLayer\bin\Debug\Homework5.DataLayer.dll
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.DataLayer\bin\Debug\Homework5.DataLayer.pdb
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.DataLayer\bin\Debug\Homework5.dll
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.DataLayer\bin\Debug\Homework5.pdb
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.DataLayer\obj\Debug\Homework5.DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.DataLayer\obj\Debug\Homework5.DataLayer.dll
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.DataLayer\obj\Debug\Homework5.DataLayer.pdb
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.DataLayer\obj\Debug\Homework5.DataLayer.Migrations.InitialCreate.resources
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.DataLayer\obj\Debug\Homework5.DataLayer.csproj.GenerateResource.Cache
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.DataLayer\obj\Debug\Homework5.DataLayer.Migrations.AddAddressToCook.resources
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.DataLayer\obj\Debug\Homework5.DataLayer.Migrations.AddCookieTable.resources
+C:\Users\1\Documents\Visual Studio 2012\Projects\02-calendar\Homework5\Homework5.DataLayer\obj\Debug\Homework5.DataLayer.Migrations.AddConnectionCookWithBakery.resources
