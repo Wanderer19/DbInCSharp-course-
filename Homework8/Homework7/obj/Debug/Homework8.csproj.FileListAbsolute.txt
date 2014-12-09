@@ -1,0 +1,8 @@
+c:\users\1\documents\visual studio 2012\Projects\Homework7\Homework7\bin\Debug\Homework7.exe.config
+c:\users\1\documents\visual studio 2012\Projects\Homework7\Homework7\bin\Debug\Homework7.exe
+c:\users\1\documents\visual studio 2012\Projects\Homework7\Homework7\bin\Debug\Homework7.pdb
+c:\users\1\documents\visual studio 2012\Projects\Homework7\Homework7\bin\Debug\nunit.framework.dll
+c:\users\1\documents\visual studio 2012\Projects\Homework7\Homework7\bin\Debug\nunit.framework.xml
+c:\users\1\documents\visual studio 2012\Projects\Homework7\Homework7\obj\Debug\Homework8.csprojResolveAssemblyReference.cache
+c:\users\1\documents\visual studio 2012\Projects\Homework7\Homework7\obj\Debug\Homework7.exe
+c:\users\1\documents\visual studio 2012\Projects\Homework7\Homework7\obj\Debug\Homework7.pdb
